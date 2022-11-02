@@ -9,7 +9,7 @@ else:
     g = None  # пред-пред-минимальное
     for i in a:
         if i != m and i != n and i != g:  # эллемент не встречался в списке ранее
-            if m is None or i < m:
+            if m is None or i < m:   # меняем на > для нахождения максимального значения
                 g = n
                 n = m
                 m = i
